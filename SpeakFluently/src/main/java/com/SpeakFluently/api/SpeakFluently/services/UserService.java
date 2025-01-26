@@ -16,34 +16,30 @@ public class UserService {
     }
 
     public boolean createUser(User user) {
-        if (userRepo.existsById(user.getUsername())) {
-            return false;
-        }
         userRepo.save(user);
         return true;
     }
 
     public List<User> getAllUsers() {
-        return userRepo.findByIsActive(true);
+        return userRepo.findAll();
     }
 
-    public User getUser(String username) {
-        return userRepo.findByUsernameAndIsActive(username, true);
+    public User getUserByUsername(String username) {
+        return userRepo.findByUsername(username).orElse(null);
     }
 
     public boolean updateUser(User user) {
-        if (!userRepo.existsById(user.getUsername())) {
-            return false;
+        if (userRepo.existsByUsername(user.getUsername())) { // Създаден метод в UserRepo
+            userRepo.save(user);
+            return true;
         }
-        userRepo.save(user);
-        return true;
+        return false;
     }
 
     public boolean removeUser(String username) {
-        User user = getUser(username);
+        User user = getUserByUsername(username);
         if (user != null) {
-            user.setIsActive(false);
-            userRepo.save(user);
+            userRepo.delete(user);
             return true;
         }
         return false;

@@ -1,32 +1,27 @@
 package com.SpeakFluently.api.SpeakFluently.controllers;
 
 import com.SpeakFluently.api.SpeakFluently.entities.User;
-import com.SpeakFluently.api.SpeakFluently.entities.ChannelUser;
 import com.SpeakFluently.api.SpeakFluently.http.AppResponse;
 import com.SpeakFluently.api.SpeakFluently.services.UserService;
 import com.SpeakFluently.api.SpeakFluently.services.ChannelService;
+import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.ArrayList;
-import java.util.HashMap;
+import java.util.List;
 
-@Controller
+@RestController
+@RequestMapping("/users")
+@RequiredArgsConstructor
 public class UserController {
 
     private final UserService userService;
     private final ChannelService channelService;
 
-    public UserController(UserService userService, ChannelService channelService) {
-        this.userService = userService;
-        this.channelService = channelService;
-    }
-
     // Create new user
-    @PostMapping("/users")
+    @PostMapping
     public ResponseEntity<?> createNewUser(@RequestBody User user) {
-        if (this.userService.createUser(user)) {
+        if (userService.createUser(user)) {
             return AppResponse.success()
                     .withMessage("User created successfully")
                     .build();
@@ -37,43 +32,33 @@ public class UserController {
     }
 
     // Fetch all users
-    @GetMapping("/users")
+    @GetMapping
     public ResponseEntity<?> fetchAllUsers() {
-        ArrayList<User> collection = new ArrayList<>(this.userService.getAllUsers());
+        List<User> users = userService.getAllUsers();
         return AppResponse.success()
-                .withData(collection)
+                .withData(users)
                 .build();
     }
 
     // Fetch single user by username
-    @GetMapping("/users/{username}")
+    @GetMapping("/{username}")
     public ResponseEntity<?> fetchSingleUser(@PathVariable String username) {
-        User responseUser = this.userService.getUser(username);
-        if (responseUser == null) {
+        User user = userService.getUserByUsername(username);
+        if (user == null) {
             return AppResponse.error()
                     .withMessage("User data not found")
                     .build();
         }
         return AppResponse.success()
-                .withData(responseUser)
-                .build();
-    }
-
-    // Fetch all channels for a user
-    @GetMapping("/users/{username}/channels")
-    public ResponseEntity<?> fetchAllChannelsForUser(@PathVariable String username) {
-        var result = this.channelService.getChannelsByUser(username); // Fixed method name
-        return AppResponse.success()
-                .withMessage("Fetch successful")
-                .withData(result)
+                .withData(user)
                 .build();
     }
 
     // Update user
-    @PutMapping("/users")
+    @PutMapping
     public ResponseEntity<?> updateUser(@RequestBody User user) {
-        boolean isUpdateSuccessful = this.userService.updateUser(user);
-        if (!isUpdateSuccessful) {
+        boolean isUpdated = userService.updateUser(user);
+        if (!isUpdated) {
             return AppResponse.error()
                     .withMessage("User data not found")
                     .build();
@@ -83,11 +68,12 @@ public class UserController {
                 .build();
     }
 
+
     // Delete user
-    @DeleteMapping("/users/{username}")
+    @DeleteMapping("/{username}")
     public ResponseEntity<?> removeUser(@PathVariable String username) {
-        boolean isDeleteSuccessful = this.userService.removeUser(username);
-        if (!isDeleteSuccessful) {
+        boolean isDeleted = userService.removeUser(username);
+        if (!isDeleted) {
             return AppResponse.error()
                     .withMessage("User not found")
                     .build();

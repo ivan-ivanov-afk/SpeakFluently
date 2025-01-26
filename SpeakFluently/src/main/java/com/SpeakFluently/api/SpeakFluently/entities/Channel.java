@@ -1,8 +1,9 @@
 package com.SpeakFluently.api.SpeakFluently.entities;
-
 import jakarta.persistence.*;
+import lombok.Data;
 
 @Entity
+@Data
 @Table(name = "td_channel")
 public class Channel {
 
@@ -20,7 +21,7 @@ public class Channel {
     @Column(name = "is_active", nullable = false)
     private boolean isActive = true;
 
-    // Getters and Setters
+    // Getter and Setter for channelId
     public int getChannelId() {
         return channelId;
     }
@@ -29,6 +30,7 @@ public class Channel {
         this.channelId = channelId;
     }
 
+    // Getter and Setter for channelName
     public String getChannelName() {
         return channelName;
     }
@@ -37,6 +39,7 @@ public class Channel {
         this.channelName = channelName;
     }
 
+    // Getter and Setter for channelOwnerUsername
     public String getChannelOwnerUsername() {
         return channelOwnerUsername;
     }
@@ -45,7 +48,8 @@ public class Channel {
         this.channelOwnerUsername = channelOwnerUsername;
     }
 
-    public boolean getIsActive() {
+    // Getter and Setter for isActive
+    public boolean isActive() {
         return isActive;
     }
 

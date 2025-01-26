@@ -1,5 +1,11 @@
 package com.SpeakFluently.api.SpeakFluently.system;
-
+import com.SpeakFluently.api.SpeakFluently.entities.User;
+import com.SpeakFluently.api.SpeakFluently.entities.Channel;
+import com.SpeakFluently.api.SpeakFluently.repositories.UserRepo;
+import com.SpeakFluently.api.SpeakFluently.repositories.ChannelRepo;
+import org.springframework.stereotype.Component;
+import org.springframework.context.event.EventListener;
+import org.springframework.boot.context.event.ApplicationReadyEvent;
 @Component
 public class DataInit {
 

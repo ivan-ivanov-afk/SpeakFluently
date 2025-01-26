@@ -1,5 +1,6 @@
 package com.SpeakFluently.api.SpeakFluently.repositories;
 
+
 import com.SpeakFluently.api.SpeakFluently.entities.Channel;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
