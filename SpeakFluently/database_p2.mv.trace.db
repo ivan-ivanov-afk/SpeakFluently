@@ -1,0 +1,330 @@
+2025-01-21 21:50:09.762477+02:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS td_channel_users(\000d\000a    channel_users_id INT PRIMARY KEY AUTO_INCREMENT,\000d\000a    channel_id INT ,\000d\000a    username NVARCHAR(50),\000d\000a    is_admin TINYINT[*](1) DEFAULT 0,\000d\000a    FOREIGN KEY (channel_id) REFERENCES td_channel(channel_id),\000d\000a    FOREIGN KEY (username) REFERENCES td_users(username)\000d\000a)"; expected "ARRAY, INVISIBLE, VISIBLE, NOT NULL, DEFAULT, GENERATED, ON UPDATE, NOT NULL, DEFAULT ON NULL, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, COMMENT, PRIMARY KEY, UNIQUE, NOT NULL, CHECK, REFERENCES, ,, )"; SQL statement:
+CREATE TABLE IF NOT EXISTS td_channel_users(
+    channel_users_id INT PRIMARY KEY AUTO_INCREMENT,
+    channel_id INT ,
+    username NVARCHAR(50),
+    is_admin TINYINT(1) DEFAULT 0,
+    FOREIGN KEY (channel_id) REFERENCES td_channel(channel_id),
+    FOREIGN KEY (username) REFERENCES td_users(username)
+) [42001-232]
+2025-01-21 21:50:18.769067+02:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS td_channel_users(\000d\000a    channel_users_id INT PRIMARY KEY AUTO_INCREMENT,\000d\000a    channel_id INT ,\000d\000a    username NVARCHAR(50),\000d\000a    is_admin TINYINT[*](1) DEFAULT 0,\000d\000a    FOREIGN KEY (channel_id) REFERENCES td_channel(channel_id),\000d\000a    FOREIGN KEY (username) REFERENCES td_users(username)\000d\000a)"; expected "ARRAY, INVISIBLE, VISIBLE, NOT NULL, DEFAULT, GENERATED, ON UPDATE, NOT NULL, DEFAULT ON NULL, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, COMMENT, PRIMARY KEY, UNIQUE, NOT NULL, CHECK, REFERENCES, ,, )"; SQL statement:
+CREATE TABLE IF NOT EXISTS td_channel_users(
+    channel_users_id INT PRIMARY KEY AUTO_INCREMENT,
+    channel_id INT ,
+    username NVARCHAR(50),
+    is_admin TINYINT(1) DEFAULT 0,
+    FOREIGN KEY (channel_id) REFERENCES td_channel(channel_id),
+    FOREIGN KEY (username) REFERENCES td_users(username)
+) [42001-232]
+2025-01-21 21:59:59.281373+02:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS td_channel_users(\000d\000a    channel_users_id INT PRIMARY KEY AUTO_INCREMENT,\000d\000a    channel_id INT ,\000d\000a    username NVARCHAR(50),\000d\000a    is_admin TINYINT[*](1) DEFAULT 0,\000d\000a    FOREIGN KEY (channel_id) REFERENCES td_channel(channel_id),\000d\000a    FOREIGN KEY (username) REFERENCES td_users(username)\000d\000a)"; expected "ARRAY, INVISIBLE, VISIBLE, NOT NULL, DEFAULT, GENERATED, ON UPDATE, NOT NULL, DEFAULT ON NULL, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, COMMENT, PRIMARY KEY, UNIQUE, NOT NULL, CHECK, REFERENCES, ,, )"; SQL statement:
+CREATE TABLE IF NOT EXISTS td_channel_users(
+    channel_users_id INT PRIMARY KEY AUTO_INCREMENT,
+    channel_id INT ,
+    username NVARCHAR(50),
+    is_admin TINYINT(1) DEFAULT 0,
+    FOREIGN KEY (channel_id) REFERENCES td_channel(channel_id),
+    FOREIGN KEY (username) REFERENCES td_users(username)
+) [42001-232]
+2025-01-21 22:04:49.312087+02:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS td_channel_users(\000d\000a    channel_users_id INT PRIMARY KEY AUTO_INCREMENT,\000d\000a    channel_id INT ,\000d\000a    username NVARCHAR(50),\000d\000a    is_admin TINYINT[*](1) DEFAULT 0,\000d\000a    FOREIGN KEY (channel_id) REFERENCES td_channel(channel_id),\000d\000a    FOREIGN KEY (username) REFERENCES td_users(username)\000d\000a)"; expected "ARRAY, INVISIBLE, VISIBLE, NOT NULL, DEFAULT, GENERATED, ON UPDATE, NOT NULL, DEFAULT ON NULL, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, COMMENT, PRIMARY KEY, UNIQUE, NOT NULL, CHECK, REFERENCES, ,, )"; SQL statement:
+CREATE TABLE IF NOT EXISTS td_channel_users(
+    channel_users_id INT PRIMARY KEY AUTO_INCREMENT,
+    channel_id INT ,
+    username NVARCHAR(50),
+    is_admin TINYINT(1) DEFAULT 0,
+    FOREIGN KEY (channel_id) REFERENCES td_channel(channel_id),
+    FOREIGN KEY (username) REFERENCES td_users(username)
+) [42001-232]
+2025-01-21 22:04:50.216960+02:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS td_channel_users(\000d\000a    channel_users_id INT PRIMARY KEY AUTO_INCREMENT,\000d\000a    channel_id INT ,\000d\000a    username NVARCHAR(50),\000d\000a    is_admin TINYINT[*](1) DEFAULT 0,\000d\000a    FOREIGN KEY (channel_id) REFERENCES td_channel(channel_id),\000d\000a    FOREIGN KEY (username) REFERENCES td_users(username)\000d\000a)"; expected "ARRAY, INVISIBLE, VISIBLE, NOT NULL, DEFAULT, GENERATED, ON UPDATE, NOT NULL, DEFAULT ON NULL, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, COMMENT, PRIMARY KEY, UNIQUE, NOT NULL, CHECK, REFERENCES, ,, )"; SQL statement:
+CREATE TABLE IF NOT EXISTS td_channel_users(
+    channel_users_id INT PRIMARY KEY AUTO_INCREMENT,
+    channel_id INT ,
+    username NVARCHAR(50),
+    is_admin TINYINT(1) DEFAULT 0,
+    FOREIGN KEY (channel_id) REFERENCES td_channel(channel_id),
+    FOREIGN KEY (username) REFERENCES td_users(username)
+) [42001-232]
+2025-01-21 22:05:09.276478+02:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS td_channel_users(\000d\000a    channel_users_id INT PRIMARY KEY AUTO_INCREMENT,\000d\000a    channel_id INT ,\000d\000a    username NVARCHAR(50),\000d\000a    is_admin TINYINT[*](1) DEFAULT 0,\000d\000a    FOREIGN KEY (channel_id) REFERENCES td_channel(channel_id),\000d\000a    FOREIGN KEY (username) REFERENCES td_users(username)\000d\000a)"; expected "ARRAY, INVISIBLE, VISIBLE, NOT NULL, DEFAULT, GENERATED, ON UPDATE, NOT NULL, DEFAULT ON NULL, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, COMMENT, PRIMARY KEY, UNIQUE, NOT NULL, CHECK, REFERENCES, ,, )"; SQL statement:
+CREATE TABLE IF NOT EXISTS td_channel_users(
+    channel_users_id INT PRIMARY KEY AUTO_INCREMENT,
+    channel_id INT ,
+    username NVARCHAR(50),
+    is_admin TINYINT(1) DEFAULT 0,
+    FOREIGN KEY (channel_id) REFERENCES td_channel(channel_id),
+    FOREIGN KEY (username) REFERENCES td_users(username)
+) [42001-232]
+2025-01-21 22:05:17.790044+02:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS td_channel_users(\000d\000a    channel_users_id INT PRIMARY KEY,\000d\000a    channel_id INT ,\000d\000a    username NVARCHAR(50),\000d\000a    is_admin TINYINT[*](1) DEFAULT 0,\000d\000a    FOREIGN KEY (channel_id) REFERENCES td_channel(channel_id),\000d\000a    FOREIGN KEY (username) REFERENCES td_users(username)\000d\000a)"; expected "ARRAY, INVISIBLE, VISIBLE, NOT NULL, DEFAULT, GENERATED, ON UPDATE, NOT NULL, DEFAULT ON NULL, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, COMMENT, PRIMARY KEY, UNIQUE, NOT NULL, CHECK, REFERENCES, ,, )"; SQL statement:
+CREATE TABLE IF NOT EXISTS td_channel_users(
+    channel_users_id INT PRIMARY KEY,
+    channel_id INT ,
+    username NVARCHAR(50),
+    is_admin TINYINT(1) DEFAULT 0,
+    FOREIGN KEY (channel_id) REFERENCES td_channel(channel_id),
+    FOREIGN KEY (username) REFERENCES td_users(username)
+) [42001-232]
+2025-01-21 22:10:55.851369+02:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS td_channel_users (\000d\000a    channel_users_id INT PRIMARY KEY AUTO_INCREMENT,\000d\000a    channel_id INT,\000d\000a    username NVARCHAR(50),\000d\000a    is_admin TINYINT[*](1) DEFAULT 0,\000d\000a    UNIQUE(channel_id, username),\000d\000a    FOREIGN KEY (channel_id) REFERENCES td_channel(channel_id) ON DELETE CASCADE,\000d\000a    FOREIGN KEY (username) REFERENCES td_users(username) ON DELETE CASCADE\000d\000a)"; expected "ARRAY, INVISIBLE, VISIBLE, NOT NULL, DEFAULT, GENERATED, ON UPDATE, NOT NULL, DEFAULT ON NULL, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, COMMENT, PRIMARY KEY, UNIQUE, NOT NULL, CHECK, REFERENCES, ,, )"; SQL statement:
+CREATE TABLE IF NOT EXISTS td_channel_users (
+    channel_users_id INT PRIMARY KEY AUTO_INCREMENT,
+    channel_id INT,
+    username NVARCHAR(50),
+    is_admin TINYINT(1) DEFAULT 0,
+    UNIQUE(channel_id, username),
+    FOREIGN KEY (channel_id) REFERENCES td_channel(channel_id) ON DELETE CASCADE,
+    FOREIGN KEY (username) REFERENCES td_users(username) ON DELETE CASCADE
+) [42001-232]
+2025-01-21 22:34:35.885265+02:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS td_channel_users(\000d\000a    channel_users_id INT PRIMARY KEY AUTO_INCREMENT,\000d\000a    channel_id INT ,\000d\000a    username NVARCHAR(50),\000d\000a    is_admin TINYINT[*](1) DEFAULT 0,\000d\000a    FOREIGN KEY (channel_id) REFERENCES td_channel(channel_id),\000d\000a    FOREIGN KEY (username) REFERENCES td_users(username)\000d\000a)"; expected "ARRAY, INVISIBLE, VISIBLE, NOT NULL, DEFAULT, GENERATED, ON UPDATE, NOT NULL, DEFAULT ON NULL, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, COMMENT, PRIMARY KEY, UNIQUE, NOT NULL, CHECK, REFERENCES, ,, )"; SQL statement:
+CREATE TABLE IF NOT EXISTS td_channel_users(
+    channel_users_id INT PRIMARY KEY AUTO_INCREMENT,
+    channel_id INT ,
+    username NVARCHAR(50),
+    is_admin TINYINT(1) DEFAULT 0,
+    FOREIGN KEY (channel_id) REFERENCES td_channel(channel_id),
+    FOREIGN KEY (username) REFERENCES td_users(username)
+) [42001-232]
+2025-01-21 22:34:49.828383+02:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS td_channel_users(\000d\000a    channel_users_id INT PRIMARY KEY AUTO_INCREMENT,\000d\000a    channel_id INT ,\000d\000a    username NVARCHAR(50),\000d\000a    is_admin TINYINT[*](1) DEFAULT 0,\000d\000a    FOREIGN KEY (channel_id)"; expected "ARRAY, INVISIBLE, VISIBLE, NOT NULL, DEFAULT, GENERATED, ON UPDATE, NOT NULL, DEFAULT ON NULL, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, COMMENT, PRIMARY KEY, UNIQUE, NOT NULL, CHECK, REFERENCES, ,, )"; SQL statement:
+CREATE TABLE IF NOT EXISTS td_channel_users(
+    channel_users_id INT PRIMARY KEY AUTO_INCREMENT,
+    channel_id INT ,
+    username NVARCHAR(50),
+    is_admin TINYINT(1) DEFAULT 0,
+    FOREIGN KEY (channel_id) [42001-232]
+2025-01-21 22:34:49.829383+02:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "[*]REFERENCES td_channel(channel_id)"; expected "ROLLBACK, REVOKE, RUNSCRIPT, RELEASE, REFRESH"; SQL statement:
+REFERENCES td_channel(channel_id) [42001-232]
+2025-01-21 22:34:49.830383+02:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "[*]FOREIGN KEY (username)"; SQL statement:
+FOREIGN KEY (username) [42000-232]
+2025-01-21 22:34:49.831383+02:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "[*]REFERENCES td_users(username)\000d\000a)"; expected "ROLLBACK, REVOKE, RUNSCRIPT, RELEASE, REFRESH"; SQL statement:
+REFERENCES td_users(username)
+) [42001-232]
+2025-01-21 22:35:26.731820+02:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS td_channel_users(\000d\000a    channel_users_id INT PRIMARY KEY AUTO_INCREMENT,\000d\000a    channel_id INT ,\000d\000a    username NVARCHAR(50),\000d\000a    is_admin TINYINT[*](1) DEFAULT 0,\000d\000a    FOREIGN KEY (channel_id) REFERENCES td_channel(channel_id)"; expected "ARRAY, INVISIBLE, VISIBLE, NOT NULL, DEFAULT, GENERATED, ON UPDATE, NOT NULL, DEFAULT ON NULL, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, COMMENT, PRIMARY KEY, UNIQUE, NOT NULL, CHECK, REFERENCES, ,, )"; SQL statement:
+CREATE TABLE IF NOT EXISTS td_channel_users(
+    channel_users_id INT PRIMARY KEY AUTO_INCREMENT,
+    channel_id INT ,
+    username NVARCHAR(50),
+    is_admin TINYINT(1) DEFAULT 0,
+    FOREIGN KEY (channel_id) REFERENCES td_channel(channel_id) [42001-232]
+2025-01-21 22:35:26.731820+02:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "[*]FOREIGN KEY (username) REFERENCES td_users(username)\000d\000a)"; SQL statement:
+FOREIGN KEY (username) REFERENCES td_users(username)
+) [42000-232]
+2025-01-21 22:35:54.914909+02:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS td_channel_users(\000d\000a    channel_users_id INT PRIMARY KEY AUTO_INCREMENT,\000d\000a    channel_id INT ,\000d\000a    username NVARCHAR(50),\000d\000a    is_admin TINYINT[*](1) DEFAULT 0,\000d\000a    FOREIGN KEY (channel_id) REFERENCES td_channel(channel_id),\000d\000a    FOREIGN KEY (username) REFERENCES td_users(username)\000d\000a)"; expected "ARRAY, INVISIBLE, VISIBLE, NOT NULL, DEFAULT, GENERATED, ON UPDATE, NOT NULL, DEFAULT ON NULL, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, COMMENT, PRIMARY KEY, UNIQUE, NOT NULL, CHECK, REFERENCES, ,, )"; SQL statement:
+CREATE TABLE IF NOT EXISTS td_channel_users(
+    channel_users_id INT PRIMARY KEY AUTO_INCREMENT,
+    channel_id INT ,
+    username NVARCHAR(50),
+    is_admin TINYINT(1) DEFAULT 0,
+    FOREIGN KEY (channel_id) REFERENCES td_channel(channel_id),
+    FOREIGN KEY (username) REFERENCES td_users(username)
+) [42001-232]
+2025-01-21 22:35:55.338767+02:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS td_channel_users(\000d\000a    channel_users_id INT PRIMARY KEY AUTO_INCREMENT,\000d\000a    channel_id INT ,\000d\000a    username NVARCHAR(50),\000d\000a    is_admin TINYINT[*](1) DEFAULT 0,\000d\000a    FOREIGN KEY (channel_id) REFERENCES td_channel(channel_id),\000d\000a    FOREIGN KEY (username) REFERENCES td_users(username)\000d\000a)"; expected "ARRAY, INVISIBLE, VISIBLE, NOT NULL, DEFAULT, GENERATED, ON UPDATE, NOT NULL, DEFAULT ON NULL, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, COMMENT, PRIMARY KEY, UNIQUE, NOT NULL, CHECK, REFERENCES, ,, )"; SQL statement:
+CREATE TABLE IF NOT EXISTS td_channel_users(
+    channel_users_id INT PRIMARY KEY AUTO_INCREMENT,
+    channel_id INT ,
+    username NVARCHAR(50),
+    is_admin TINYINT(1) DEFAULT 0,
+    FOREIGN KEY (channel_id) REFERENCES td_channel(channel_id),
+    FOREIGN KEY (username) REFERENCES td_users(username)
+) [42001-232]
+2025-01-21 22:35:55.494574+02:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS td_channel_users(\000d\000a    channel_users_id INT PRIMARY KEY AUTO_INCREMENT,\000d\000a    channel_id INT ,\000d\000a    username NVARCHAR(50),\000d\000a    is_admin TINYINT[*](1) DEFAULT 0,\000d\000a    FOREIGN KEY (channel_id) REFERENCES td_channel(channel_id),\000d\000a    FOREIGN KEY (username) REFERENCES td_users(username)\000d\000a)"; expected "ARRAY, INVISIBLE, VISIBLE, NOT NULL, DEFAULT, GENERATED, ON UPDATE, NOT NULL, DEFAULT ON NULL, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, COMMENT, PRIMARY KEY, UNIQUE, NOT NULL, CHECK, REFERENCES, ,, )"; SQL statement:
+CREATE TABLE IF NOT EXISTS td_channel_users(
+    channel_users_id INT PRIMARY KEY AUTO_INCREMENT,
+    channel_id INT ,
+    username NVARCHAR(50),
+    is_admin TINYINT(1) DEFAULT 0,
+    FOREIGN KEY (channel_id) REFERENCES td_channel(channel_id),
+    FOREIGN KEY (username) REFERENCES td_users(username)
+) [42001-232]
+2025-01-21 22:35:55.658378+02:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS td_channel_users(\000d\000a    channel_users_id INT PRIMARY KEY AUTO_INCREMENT,\000d\000a    channel_id INT ,\000d\000a    username NVARCHAR(50),\000d\000a    is_admin TINYINT[*](1) DEFAULT 0,\000d\000a    FOREIGN KEY (channel_id) REFERENCES td_channel(channel_id),\000d\000a    FOREIGN KEY (username) REFERENCES td_users(username)\000d\000a)"; expected "ARRAY, INVISIBLE, VISIBLE, NOT NULL, DEFAULT, GENERATED, ON UPDATE, NOT NULL, DEFAULT ON NULL, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, COMMENT, PRIMARY KEY, UNIQUE, NOT NULL, CHECK, REFERENCES, ,, )"; SQL statement:
+CREATE TABLE IF NOT EXISTS td_channel_users(
+    channel_users_id INT PRIMARY KEY AUTO_INCREMENT,
+    channel_id INT ,
+    username NVARCHAR(50),
+    is_admin TINYINT(1) DEFAULT 0,
+    FOREIGN KEY (channel_id) REFERENCES td_channel(channel_id),
+    FOREIGN KEY (username) REFERENCES td_users(username)
+) [42001-232]
+2025-01-21 22:35:55.807428+02:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS td_channel_users(\000d\000a    channel_users_id INT PRIMARY KEY AUTO_INCREMENT,\000d\000a    channel_id INT ,\000d\000a    username NVARCHAR(50),\000d\000a    is_admin TINYINT[*](1) DEFAULT 0,\000d\000a    FOREIGN KEY (channel_id) REFERENCES td_channel(channel_id),\000d\000a    FOREIGN KEY (username) REFERENCES td_users(username)\000d\000a)"; expected "ARRAY, INVISIBLE, VISIBLE, NOT NULL, DEFAULT, GENERATED, ON UPDATE, NOT NULL, DEFAULT ON NULL, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, COMMENT, PRIMARY KEY, UNIQUE, NOT NULL, CHECK, REFERENCES, ,, )"; SQL statement:
+CREATE TABLE IF NOT EXISTS td_channel_users(
+    channel_users_id INT PRIMARY KEY AUTO_INCREMENT,
+    channel_id INT ,
+    username NVARCHAR(50),
+    is_admin TINYINT(1) DEFAULT 0,
+    FOREIGN KEY (channel_id) REFERENCES td_channel(channel_id),
+    FOREIGN KEY (username) REFERENCES td_users(username)
+) [42001-232]
+2025-01-21 22:35:55.958733+02:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS td_channel_users(\000d\000a    channel_users_id INT PRIMARY KEY AUTO_INCREMENT,\000d\000a    channel_id INT ,\000d\000a    username NVARCHAR(50),\000d\000a    is_admin TINYINT[*](1) DEFAULT 0,\000d\000a    FOREIGN KEY (channel_id) REFERENCES td_channel(channel_id),\000d\000a    FOREIGN KEY (username) REFERENCES td_users(username)\000d\000a)"; expected "ARRAY, INVISIBLE, VISIBLE, NOT NULL, DEFAULT, GENERATED, ON UPDATE, NOT NULL, DEFAULT ON NULL, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, COMMENT, PRIMARY KEY, UNIQUE, NOT NULL, CHECK, REFERENCES, ,, )"; SQL statement:
+CREATE TABLE IF NOT EXISTS td_channel_users(
+    channel_users_id INT PRIMARY KEY AUTO_INCREMENT,
+    channel_id INT ,
+    username NVARCHAR(50),
+    is_admin TINYINT(1) DEFAULT 0,
+    FOREIGN KEY (channel_id) REFERENCES td_channel(channel_id),
+    FOREIGN KEY (username) REFERENCES td_users(username)
+) [42001-232]
+2025-01-21 22:35:56.110557+02:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS td_channel_users(\000d\000a    channel_users_id INT PRIMARY KEY AUTO_INCREMENT,\000d\000a    channel_id INT ,\000d\000a    username NVARCHAR(50),\000d\000a    is_admin TINYINT[*](1) DEFAULT 0,\000d\000a    FOREIGN KEY (channel_id) REFERENCES td_channel(channel_id),\000d\000a    FOREIGN KEY (username) REFERENCES td_users(username)\000d\000a)"; expected "ARRAY, INVISIBLE, VISIBLE, NOT NULL, DEFAULT, GENERATED, ON UPDATE, NOT NULL, DEFAULT ON NULL, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, COMMENT, PRIMARY KEY, UNIQUE, NOT NULL, CHECK, REFERENCES, ,, )"; SQL statement:
+CREATE TABLE IF NOT EXISTS td_channel_users(
+    channel_users_id INT PRIMARY KEY AUTO_INCREMENT,
+    channel_id INT ,
+    username NVARCHAR(50),
+    is_admin TINYINT(1) DEFAULT 0,
+    FOREIGN KEY (channel_id) REFERENCES td_channel(channel_id),
+    FOREIGN KEY (username) REFERENCES td_users(username)
+) [42001-232]
+2025-01-21 22:35:56.265823+02:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS td_channel_users(\000d\000a    channel_users_id INT PRIMARY KEY AUTO_INCREMENT,\000d\000a    channel_id INT ,\000d\000a    username NVARCHAR(50),\000d\000a    is_admin TINYINT[*](1) DEFAULT 0,\000d\000a    FOREIGN KEY (channel_id) REFERENCES td_channel(channel_id),\000d\000a    FOREIGN KEY (username) REFERENCES td_users(username)\000d\000a)"; expected "ARRAY, INVISIBLE, VISIBLE, NOT NULL, DEFAULT, GENERATED, ON UPDATE, NOT NULL, DEFAULT ON NULL, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, COMMENT, PRIMARY KEY, UNIQUE, NOT NULL, CHECK, REFERENCES, ,, )"; SQL statement:
+CREATE TABLE IF NOT EXISTS td_channel_users(
+    channel_users_id INT PRIMARY KEY AUTO_INCREMENT,
+    channel_id INT ,
+    username NVARCHAR(50),
+    is_admin TINYINT(1) DEFAULT 0,
+    FOREIGN KEY (channel_id) REFERENCES td_channel(channel_id),
+    FOREIGN KEY (username) REFERENCES td_users(username)
+) [42001-232]
+2025-01-21 22:35:56.431088+02:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS td_channel_users(\000d\000a    channel_users_id INT PRIMARY KEY AUTO_INCREMENT,\000d\000a    channel_id INT ,\000d\000a    username NVARCHAR(50),\000d\000a    is_admin TINYINT[*](1) DEFAULT 0,\000d\000a    FOREIGN KEY (channel_id) REFERENCES td_channel(channel_id),\000d\000a    FOREIGN KEY (username) REFERENCES td_users(username)\000d\000a)"; expected "ARRAY, INVISIBLE, VISIBLE, NOT NULL, DEFAULT, GENERATED, ON UPDATE, NOT NULL, DEFAULT ON NULL, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, COMMENT, PRIMARY KEY, UNIQUE, NOT NULL, CHECK, REFERENCES, ,, )"; SQL statement:
+CREATE TABLE IF NOT EXISTS td_channel_users(
+    channel_users_id INT PRIMARY KEY AUTO_INCREMENT,
+    channel_id INT ,
+    username NVARCHAR(50),
+    is_admin TINYINT(1) DEFAULT 0,
+    FOREIGN KEY (channel_id) REFERENCES td_channel(channel_id),
+    FOREIGN KEY (username) REFERENCES td_users(username)
+) [42001-232]
+2025-01-21 22:35:56.574423+02:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS td_channel_users(\000d\000a    channel_users_id INT PRIMARY KEY AUTO_INCREMENT,\000d\000a    channel_id INT ,\000d\000a    username NVARCHAR(50),\000d\000a    is_admin TINYINT[*](1) DEFAULT 0,\000d\000a    FOREIGN KEY (channel_id) REFERENCES td_channel(channel_id),\000d\000a    FOREIGN KEY (username) REFERENCES td_users(username)\000d\000a)"; expected "ARRAY, INVISIBLE, VISIBLE, NOT NULL, DEFAULT, GENERATED, ON UPDATE, NOT NULL, DEFAULT ON NULL, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, COMMENT, PRIMARY KEY, UNIQUE, NOT NULL, CHECK, REFERENCES, ,, )"; SQL statement:
+CREATE TABLE IF NOT EXISTS td_channel_users(
+    channel_users_id INT PRIMARY KEY AUTO_INCREMENT,
+    channel_id INT ,
+    username NVARCHAR(50),
+    is_admin TINYINT(1) DEFAULT 0,
+    FOREIGN KEY (channel_id) REFERENCES td_channel(channel_id),
+    FOREIGN KEY (username) REFERENCES td_users(username)
+) [42001-232]
+2025-01-21 22:35:56.738860+02:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS td_channel_users(\000d\000a    channel_users_id INT PRIMARY KEY AUTO_INCREMENT,\000d\000a    channel_id INT ,\000d\000a    username NVARCHAR(50),\000d\000a    is_admin TINYINT[*](1) DEFAULT 0,\000d\000a    FOREIGN KEY (channel_id) REFERENCES td_channel(channel_id),\000d\000a    FOREIGN KEY (username) REFERENCES td_users(username)\000d\000a)"; expected "ARRAY, INVISIBLE, VISIBLE, NOT NULL, DEFAULT, GENERATED, ON UPDATE, NOT NULL, DEFAULT ON NULL, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, COMMENT, PRIMARY KEY, UNIQUE, NOT NULL, CHECK, REFERENCES, ,, )"; SQL statement:
+CREATE TABLE IF NOT EXISTS td_channel_users(
+    channel_users_id INT PRIMARY KEY AUTO_INCREMENT,
+    channel_id INT ,
+    username NVARCHAR(50),
+    is_admin TINYINT(1) DEFAULT 0,
+    FOREIGN KEY (channel_id) REFERENCES td_channel(channel_id),
+    FOREIGN KEY (username) REFERENCES td_users(username)
+) [42001-232]
+2025-01-21 22:35:56.901446+02:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS td_channel_users(\000d\000a    channel_users_id INT PRIMARY KEY AUTO_INCREMENT,\000d\000a    channel_id INT ,\000d\000a    username NVARCHAR(50),\000d\000a    is_admin TINYINT[*](1) DEFAULT 0,\000d\000a    FOREIGN KEY (channel_id) REFERENCES td_channel(channel_id),\000d\000a    FOREIGN KEY (username) REFERENCES td_users(username)\000d\000a)"; expected "ARRAY, INVISIBLE, VISIBLE, NOT NULL, DEFAULT, GENERATED, ON UPDATE, NOT NULL, DEFAULT ON NULL, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, COMMENT, PRIMARY KEY, UNIQUE, NOT NULL, CHECK, REFERENCES, ,, )"; SQL statement:
+CREATE TABLE IF NOT EXISTS td_channel_users(
+    channel_users_id INT PRIMARY KEY AUTO_INCREMENT,
+    channel_id INT ,
+    username NVARCHAR(50),
+    is_admin TINYINT(1) DEFAULT 0,
+    FOREIGN KEY (channel_id) REFERENCES td_channel(channel_id),
+    FOREIGN KEY (username) REFERENCES td_users(username)
+) [42001-232]
+2025-01-21 22:35:57.090109+02:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS td_channel_users(\000d\000a    channel_users_id INT PRIMARY KEY AUTO_INCREMENT,\000d\000a    channel_id INT ,\000d\000a    username NVARCHAR(50),\000d\000a    is_admin TINYINT[*](1) DEFAULT 0,\000d\000a    FOREIGN KEY (channel_id) REFERENCES td_channel(channel_id),\000d\000a    FOREIGN KEY (username) REFERENCES td_users(username)\000d\000a)"; expected "ARRAY, INVISIBLE, VISIBLE, NOT NULL, DEFAULT, GENERATED, ON UPDATE, NOT NULL, DEFAULT ON NULL, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, COMMENT, PRIMARY KEY, UNIQUE, NOT NULL, CHECK, REFERENCES, ,, )"; SQL statement:
+CREATE TABLE IF NOT EXISTS td_channel_users(
+    channel_users_id INT PRIMARY KEY AUTO_INCREMENT,
+    channel_id INT ,
+    username NVARCHAR(50),
+    is_admin TINYINT(1) DEFAULT 0,
+    FOREIGN KEY (channel_id) REFERENCES td_channel(channel_id),
+    FOREIGN KEY (username) REFERENCES td_users(username)
+) [42001-232]
+2025-01-21 22:35:57.242171+02:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS td_channel_users(\000d\000a    channel_users_id INT PRIMARY KEY AUTO_INCREMENT,\000d\000a    channel_id INT ,\000d\000a    username NVARCHAR(50),\000d\000a    is_admin TINYINT[*](1) DEFAULT 0,\000d\000a    FOREIGN KEY (channel_id) REFERENCES td_channel(channel_id),\000d\000a    FOREIGN KEY (username) REFERENCES td_users(username)\000d\000a)"; expected "ARRAY, INVISIBLE, VISIBLE, NOT NULL, DEFAULT, GENERATED, ON UPDATE, NOT NULL, DEFAULT ON NULL, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, COMMENT, PRIMARY KEY, UNIQUE, NOT NULL, CHECK, REFERENCES, ,, )"; SQL statement:
+CREATE TABLE IF NOT EXISTS td_channel_users(
+    channel_users_id INT PRIMARY KEY AUTO_INCREMENT,
+    channel_id INT ,
+    username NVARCHAR(50),
+    is_admin TINYINT(1) DEFAULT 0,
+    FOREIGN KEY (channel_id) REFERENCES td_channel(channel_id),
+    FOREIGN KEY (username) REFERENCES td_users(username)
+) [42001-232]
+2025-01-21 22:35:57.421546+02:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS td_channel_users(\000d\000a    channel_users_id INT PRIMARY KEY AUTO_INCREMENT,\000d\000a    channel_id INT ,\000d\000a    username NVARCHAR(50),\000d\000a    is_admin TINYINT[*](1) DEFAULT 0,\000d\000a    FOREIGN KEY (channel_id) REFERENCES td_channel(channel_id),\000d\000a    FOREIGN KEY (username) REFERENCES td_users(username)\000d\000a)"; expected "ARRAY, INVISIBLE, VISIBLE, NOT NULL, DEFAULT, GENERATED, ON UPDATE, NOT NULL, DEFAULT ON NULL, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, COMMENT, PRIMARY KEY, UNIQUE, NOT NULL, CHECK, REFERENCES, ,, )"; SQL statement:
+CREATE TABLE IF NOT EXISTS td_channel_users(
+    channel_users_id INT PRIMARY KEY AUTO_INCREMENT,
+    channel_id INT ,
+    username NVARCHAR(50),
+    is_admin TINYINT(1) DEFAULT 0,
+    FOREIGN KEY (channel_id) REFERENCES td_channel(channel_id),
+    FOREIGN KEY (username) REFERENCES td_users(username)
+) [42001-232]
+2025-01-21 22:35:57.589750+02:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS td_channel_users(\000d\000a    channel_users_id INT PRIMARY KEY AUTO_INCREMENT,\000d\000a    channel_id INT ,\000d\000a    username NVARCHAR(50),\000d\000a    is_admin TINYINT[*](1) DEFAULT 0,\000d\000a    FOREIGN KEY (channel_id) REFERENCES td_channel(channel_id),\000d\000a    FOREIGN KEY (username) REFERENCES td_users(username)\000d\000a)"; expected "ARRAY, INVISIBLE, VISIBLE, NOT NULL, DEFAULT, GENERATED, ON UPDATE, NOT NULL, DEFAULT ON NULL, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, COMMENT, PRIMARY KEY, UNIQUE, NOT NULL, CHECK, REFERENCES, ,, )"; SQL statement:
+CREATE TABLE IF NOT EXISTS td_channel_users(
+    channel_users_id INT PRIMARY KEY AUTO_INCREMENT,
+    channel_id INT ,
+    username NVARCHAR(50),
+    is_admin TINYINT(1) DEFAULT 0,
+    FOREIGN KEY (channel_id) REFERENCES td_channel(channel_id),
+    FOREIGN KEY (username) REFERENCES td_users(username)
+) [42001-232]
+2025-01-21 22:35:57.763072+02:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS td_channel_users(\000d\000a    channel_users_id INT PRIMARY KEY AUTO_INCREMENT,\000d\000a    channel_id INT ,\000d\000a    username NVARCHAR(50),\000d\000a    is_admin TINYINT[*](1) DEFAULT 0,\000d\000a    FOREIGN KEY (channel_id) REFERENCES td_channel(channel_id),\000d\000a    FOREIGN KEY (username) REFERENCES td_users(username)\000d\000a)"; expected "ARRAY, INVISIBLE, VISIBLE, NOT NULL, DEFAULT, GENERATED, ON UPDATE, NOT NULL, DEFAULT ON NULL, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, COMMENT, PRIMARY KEY, UNIQUE, NOT NULL, CHECK, REFERENCES, ,, )"; SQL statement:
+CREATE TABLE IF NOT EXISTS td_channel_users(
+    channel_users_id INT PRIMARY KEY AUTO_INCREMENT,
+    channel_id INT ,
+    username NVARCHAR(50),
+    is_admin TINYINT(1) DEFAULT 0,
+    FOREIGN KEY (channel_id) REFERENCES td_channel(channel_id),
+    FOREIGN KEY (username) REFERENCES td_users(username)
+) [42001-232]
+2025-01-21 22:36:08.976077+02:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS td_channel_users(\000d\000a    channel_users_id INT PRIMARY KEY AUTO_INCREMENT,\000d\000a    channel_id INT ,\000d\000a    username NVARCHAR(50),\000d\000a    is_admin TINYINT[*](1) DEFAULT 0\000d\000a  \000d\000a)"; expected "ARRAY, INVISIBLE, VISIBLE, NOT NULL, DEFAULT, GENERATED, ON UPDATE, NOT NULL, DEFAULT ON NULL, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, COMMENT, PRIMARY KEY, UNIQUE, NOT NULL, CHECK, REFERENCES, ,, )"; SQL statement:
+CREATE TABLE IF NOT EXISTS td_channel_users(
+    channel_users_id INT PRIMARY KEY AUTO_INCREMENT,
+    channel_id INT ,
+    username NVARCHAR(50),
+    is_admin TINYINT(1) DEFAULT 0
+  
+) [42001-232]
+2025-01-21 22:38:08.166399+02:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS td_channel_users(\000d\000a    channel_users_id INT PRIMARY KEY AUTO_INCREMENT,\000d\000a    channel_id INT,\000d\000a    username NVARCHAR(50),\000d\000a    is_admin TINYINT[*](1) DEFAULT 0,\000d\000a    FOREIGN KEY (channel_id) REFERENCES td_channel(channel_id),\000d\000a    FOREIGN KEY (username) REFERENCES td_users(username)\000d\000a)"; expected "ARRAY, INVISIBLE, VISIBLE, NOT NULL, DEFAULT, GENERATED, ON UPDATE, NOT NULL, DEFAULT ON NULL, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, COMMENT, PRIMARY KEY, UNIQUE, NOT NULL, CHECK, REFERENCES, ,, )"; SQL statement:
+CREATE TABLE IF NOT EXISTS td_channel_users(
+    channel_users_id INT PRIMARY KEY AUTO_INCREMENT,
+    channel_id INT,
+    username NVARCHAR(50),
+    is_admin TINYINT(1) DEFAULT 0,
+    FOREIGN KEY (channel_id) REFERENCES td_channel(channel_id),
+    FOREIGN KEY (username) REFERENCES td_users(username)
+) [42001-232]
+2025-01-21 22:39:38.037067+02:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS td_channel_users(\000d\000a    channel_users_id INT PRIMARY KEY AUTO_INCREMENT,\000d\000a    channel_id INT,\000d\000a    username NVARCHAR(50),\000d\000a    is_admin TINYINT[*](1),\000d\000a    FOREIGN KEY (channel_id) REFERENCES td_channel(channel_id),\000d\000a    FOREIGN KEY (username) REFERENCES td_users(username)\000d\000a)"; expected "ARRAY, INVISIBLE, VISIBLE, NOT NULL, DEFAULT, GENERATED, ON UPDATE, NOT NULL, DEFAULT ON NULL, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, COMMENT, PRIMARY KEY, UNIQUE, NOT NULL, CHECK, REFERENCES, ,, )"; SQL statement:
+CREATE TABLE IF NOT EXISTS td_channel_users(
+    channel_users_id INT PRIMARY KEY AUTO_INCREMENT,
+    channel_id INT,
+    username NVARCHAR(50),
+    is_admin TINYINT(1),
+    FOREIGN KEY (channel_id) REFERENCES td_channel(channel_id),
+    FOREIGN KEY (username) REFERENCES td_users(username)
+) [42001-232]
+2025-01-21 22:39:38.892718+02:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS td_channel_users(\000d\000a    channel_users_id INT PRIMARY KEY AUTO_INCREMENT,\000d\000a    channel_id INT,\000d\000a    username NVARCHAR(50),\000d\000a    is_admin TINYINT[*](1),\000d\000a    FOREIGN KEY (channel_id) REFERENCES td_channel(channel_id),\000d\000a    FOREIGN KEY (username) REFERENCES td_users(username)\000d\000a)"; expected "ARRAY, INVISIBLE, VISIBLE, NOT NULL, DEFAULT, GENERATED, ON UPDATE, NOT NULL, DEFAULT ON NULL, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, COMMENT, PRIMARY KEY, UNIQUE, NOT NULL, CHECK, REFERENCES, ,, )"; SQL statement:
+CREATE TABLE IF NOT EXISTS td_channel_users(
+    channel_users_id INT PRIMARY KEY AUTO_INCREMENT,
+    channel_id INT,
+    username NVARCHAR(50),
+    is_admin TINYINT(1),
+    FOREIGN KEY (channel_id) REFERENCES td_channel(channel_id),
+    FOREIGN KEY (username) REFERENCES td_users(username)
+) [42001-232]
