@@ -2,21 +2,18 @@ package com.SpeakFluently.api.SpeakFluently.services;
 
 import com.SpeakFluently.api.SpeakFluently.entities.Channel;
 import com.SpeakFluently.api.SpeakFluently.repositories.ChannelRepo;
-import com.SpeakFluently.api.SpeakFluently.repositories.ChannelUserRepo;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.stream.Collectors;
+import java.util.Optional;
 
 @Service
 public class ChannelService {
 
     private final ChannelRepo channelRepo;
-    private final ChannelUserRepo channelUserRepo;
 
-    public ChannelService(ChannelRepo channelRepo, ChannelUserRepo channelUserRepo) {
+    public ChannelService(ChannelRepo channelRepo) {
         this.channelRepo = channelRepo;
-        this.channelUserRepo = channelUserRepo;
     }
 
     public boolean createChannel(Channel channel) {
@@ -28,16 +25,8 @@ public class ChannelService {
         return channelRepo.findByIsActive(true);
     }
 
-    public Channel getChannel(int channelId) {
-        return channelRepo.findById(channelId).orElse(null);
-    }
-
-    public List<Channel> getChannelsByUser(String username) {
-        var channelUsers = channelUserRepo.findByUsername(username);
-        return channelUsers.stream()
-                .map(channelUser -> channelRepo.findById(channelUser.getChannelId()).orElse(null))
-                .filter(java.util.Objects::nonNull)
-                .collect(Collectors.toList());
+    public Optional<Channel> getChannel(int channelId) {
+        return channelRepo.findById(channelId);
     }
 
     public boolean updateChannel(Channel channel) {
@@ -46,10 +35,11 @@ public class ChannelService {
     }
 
     public boolean removeChannel(int channelId) {
-        Channel channel = getChannel(channelId);
-        if (channel != null) {
-            channel.setIsActive(false);
-            channelRepo.save(channel);
+        Optional<Channel> channel = getChannel(channelId);
+        if (channel.isPresent()) {
+            Channel existingChannel = channel.get();
+            existingChannel.setDeleted(true);
+            channelRepo.save(existingChannel);
             return true;
         }
         return false;

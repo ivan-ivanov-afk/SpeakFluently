@@ -1,9 +1,9 @@
 package com.SpeakFluently.api.SpeakFluently.entities;
+
 import jakarta.persistence.*;
-import lombok.Data;
+import java.time.LocalDateTime;
 
 @Entity
-@Data
 @Table(name = "td_channel")
 public class Channel {
 
@@ -21,7 +21,13 @@ public class Channel {
     @Column(name = "is_active", nullable = false)
     private boolean isActive = true;
 
-    // Getter and Setter for channelId
+    @Column(name = "is_deleted", nullable = false)
+    private boolean isDeleted = false;
+
+    @Column(name = "created_at", nullable = false, updatable = false)
+    private LocalDateTime createdAt = LocalDateTime.now();
+
+    // Getters and Setters
     public int getChannelId() {
         return channelId;
     }
@@ -30,7 +36,6 @@ public class Channel {
         this.channelId = channelId;
     }
 
-    // Getter and Setter for channelName
     public String getChannelName() {
         return channelName;
     }
@@ -39,7 +44,6 @@ public class Channel {
         this.channelName = channelName;
     }
 
-    // Getter and Setter for channelOwnerUsername
     public String getChannelOwnerUsername() {
         return channelOwnerUsername;
     }
@@ -48,12 +52,23 @@ public class Channel {
         this.channelOwnerUsername = channelOwnerUsername;
     }
 
-    // Getter and Setter for isActive
     public boolean isActive() {
         return isActive;
     }
 
-    public void setIsActive(boolean isActive) {
-        this.isActive = isActive;
+    public void setActive(boolean active) {
+        isActive = active;
+    }
+
+    public boolean isDeleted() {
+        return isDeleted;
+    }
+
+    public void setDeleted(boolean deleted) {
+        isDeleted = deleted;
+    }
+
+    public LocalDateTime getCreatedAt() {
+        return createdAt;
     }
 }
