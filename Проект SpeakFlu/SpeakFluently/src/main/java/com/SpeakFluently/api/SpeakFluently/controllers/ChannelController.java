@@ -40,7 +40,7 @@ public class ChannelController {
 
     @GetMapping("/{channelId}")
     public ResponseEntity<?> fetchSingleChannel(@PathVariable int channelId) {
-        var channel = channelService.getChannel(channelId); // Използвай getChannel вместо getChannelById
+        var channel = channelService.getChannel(channelId); 
 
         if (channel == null) {
             return AppResponse.error()
