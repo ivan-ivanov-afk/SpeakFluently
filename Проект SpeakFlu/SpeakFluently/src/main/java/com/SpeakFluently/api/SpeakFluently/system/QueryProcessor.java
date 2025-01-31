@@ -48,9 +48,6 @@ public class QueryProcessor<T> {
         return this.jdbcTemplate.query(sqlQuery, this.valueCollection.toArray(), mapper);
     }
 
-//    public Customer processSelect() {
-//
-//    }
 
     public void initNewQueryOperation() {
 

@@ -19,7 +19,7 @@ public class DataInit {
 
     @EventListener(ApplicationReadyEvent.class)
     public void initializeDatabase() {
-        // Създаване на примерни записи
+
         if (userRepo.count() == 0) {
             User user = new User();
             user.setUsername("admin");

@@ -16,30 +16,30 @@ public class ChannelService {
         this.channelRepo = channelRepo;
     }
 
-    // Създаване на канал
+
     public boolean createChannel(Channel channel) {
         channel.setDeleted(false); // По подразбиране новите канали не са изтрити
         channelRepo.save(channel);
         return true;
     }
 
-    // Връща всички активни канали (без изтритите)
+
     public List<Channel> getAllChannels() {
         return channelRepo.findByIsDeletedFalse();
     }
 
-    // Намира конкретен канал
+
     public Optional<Channel> getChannel(int channelId) {
         return channelRepo.findById(channelId);
     }
 
-    // Обновяване на канал
+
     public boolean updateChannel(Channel channel) {
         channelRepo.save(channel);
         return true;
     }
 
-    // Soft Delete - маркира канала като изтрит, но не го премахва от базата
+
     public boolean removeChannel(int channelId) {
         Optional<Channel> channel = getChannel(channelId);
         if (channel.isPresent()) {
@@ -51,7 +51,7 @@ public class ChannelService {
         return false;
     }
 
-    // Възстановяване на изтрит канал
+
     public boolean restoreChannel(int channelId) {
         Optional<Channel> channel = getChannel(channelId);
         if (channel.isPresent() && channel.get().isDeleted()) {

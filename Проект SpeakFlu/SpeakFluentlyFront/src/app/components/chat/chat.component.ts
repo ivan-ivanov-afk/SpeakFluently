@@ -22,7 +22,7 @@ export class ChatComponent implements OnInit {
   loadMessages() {
     if (this.selectedChannelId) {
       this.chatService.getMessages(this.selectedChannelId).subscribe(response => {
-        this.messages = response; // response вече трябва да е масив
+        this.messages = response; 
       });
     }
   }

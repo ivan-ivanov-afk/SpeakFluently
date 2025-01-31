@@ -29,7 +29,7 @@ public class UserService {
     }
 
     public boolean updateUser(User user) {
-        if (userRepo.existsByUsername(user.getUsername())) { // Създаден метод в UserRepo
+        if (userRepo.existsByUsername(user.getUsername())) {
             userRepo.save(user);
             return true;
         }

@@ -18,7 +18,6 @@ public class ChannelController {
         this.channelService = channelService;
     }
 
-    // Create a new channel
     @PostMapping
     public ResponseEntity<?> createChannel(@RequestBody Channel channel) {
         if (channelService.createChannel(channel)) {
@@ -31,7 +30,6 @@ public class ChannelController {
                 .build();
     }
 
-    // Fetch all channels
     @GetMapping
     public ResponseEntity<?> fetchAllChannels() {
         var channels = channelService.getAllChannels();
@@ -40,7 +38,6 @@ public class ChannelController {
                 .build();
     }
 
-    // Fetch a single channel by ID
     @GetMapping("/{channelId}")
     public ResponseEntity<?> fetchSingleChannel(@PathVariable int channelId) {
         var channel = channelService.getChannel(channelId); // Използвай getChannel вместо getChannelById
@@ -56,7 +53,6 @@ public class ChannelController {
                 .build();
     }
 
-    // Update a channel
     @PutMapping
     public ResponseEntity<?> updateChannel(@RequestBody Channel channel) {
         boolean isUpdateSuccessful = channelService.updateChannel(channel);
@@ -72,7 +68,6 @@ public class ChannelController {
                 .build();
     }
 
-    // Delete a channel by ID
     @DeleteMapping("/{channelId}")
     public ResponseEntity<?> removeChannel(@PathVariable int channelId) {
         boolean isDeleteSuccessful = channelService.removeChannel(channelId);

@@ -27,7 +27,7 @@ public class Channel {
     @Column(name = "created_at", nullable = false, updatable = false)
     private LocalDateTime createdAt = LocalDateTime.now();
 
-    // Getters and Setters
+
     public int getChannelId() {
         return channelId;
     }

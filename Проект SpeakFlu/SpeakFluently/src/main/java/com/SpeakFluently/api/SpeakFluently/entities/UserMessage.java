@@ -23,6 +23,4 @@ public class UserMessage {
 
     @Column(name = "timestamp", nullable = false)
     private LocalDateTime timestamp;
-
-    // Getters and Setters
 }

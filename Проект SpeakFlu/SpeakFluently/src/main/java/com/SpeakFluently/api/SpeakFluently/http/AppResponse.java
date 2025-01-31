@@ -27,7 +27,7 @@ public class AppResponse {
         return new AppResponse();
     }
 
-    // Not found response
+
     public static AppResponse notFound(String resourceName) {
         response = new HashMap<>();
         response.put("status", "error");
@@ -36,7 +36,7 @@ public class AppResponse {
         return new AppResponse();
     }
 
-    // Unauthorized response
+
     public static AppResponse unauthorized() {
         response = new HashMap<>();
         response.put("status", "error");
@@ -45,37 +45,36 @@ public class AppResponse {
         return new AppResponse();
     }
 
-    // With custom HTTP code
+
     public AppResponse withCode(HttpStatus code) {
         response.put("code", code.value());
         return this;
     }
 
-    // With custom message
+
     public AppResponse withMessage(String message) {
         response.put("message", message);
         return this;
     }
 
-    // With data (single object)
+
     public AppResponse withData(Object data) {
         response.put("data", data);
         return this;
     }
 
-    // With data as list
+
     public AppResponse withDataAsArray(List<?> data) {
         response.put("data", data);
         return this;
     }
 
-    // Build response
+
     public ResponseEntity<Object> build() {
         int code = (int) response.get("code");
         return new ResponseEntity<>(response, HttpStatus.valueOf(code));
     }
 
-    // Additional helpers for database-specific errors
 
     public static AppResponse duplicateEntry(String entryName) {
         response = new HashMap<>();

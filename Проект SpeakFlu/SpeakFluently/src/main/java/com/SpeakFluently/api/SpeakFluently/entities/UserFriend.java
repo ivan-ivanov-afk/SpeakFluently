@@ -17,7 +17,7 @@ public class UserFriend {
     @Column(name = "friend_username", nullable = false, length = 50) // Fixed typo
     private String friendUsername;
 
-    // Getters and Setters
+
     public int getId() {
         return id;
     }

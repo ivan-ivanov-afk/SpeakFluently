@@ -18,7 +18,7 @@ public class UserController {
     private final UserService userService;
     private final ChannelService channelService;
 
-    // Create new user
+
     @PostMapping
     public ResponseEntity<?> createNewUser(@RequestBody User user) {
         if (userService.createUser(user)) {
@@ -31,7 +31,7 @@ public class UserController {
                 .build();
     }
 
-    // Fetch all users
+
     @GetMapping
     public ResponseEntity<?> fetchAllUsers() {
         List<User> users = userService.getAllUsers();
@@ -40,7 +40,7 @@ public class UserController {
                 .build();
     }
 
-    // Fetch single user by username
+
     @GetMapping("/{username}")
     public ResponseEntity<?> fetchSingleUser(@PathVariable String username) {
         User user = userService.getUserByUsername(username);
@@ -54,7 +54,7 @@ public class UserController {
                 .build();
     }
 
-    // Update user
+
     @PutMapping
     public ResponseEntity<?> updateUser(@RequestBody User user) {
         boolean isUpdated = userService.updateUser(user);
@@ -69,7 +69,7 @@ public class UserController {
     }
 
 
-    // Delete user
+
     @DeleteMapping("/{username}")
     public ResponseEntity<?> removeUser(@PathVariable String username) {
         boolean isDeleted = userService.removeUser(username);
